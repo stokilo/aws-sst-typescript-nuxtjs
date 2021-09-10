@@ -49,8 +49,8 @@ function generatePolicyStatement (isAllowed: boolean, methodArn: string): Policy
 
   // Replace HTTP method in Arn string with *, otherwise first invoked HTTP method will be cached on Api Gateway side.
   // Subsequent calls to same stage/path, but different method, will fail till cache is expired. This fix this problem.
-  // arn:aws:execute-api:me-south-1:262280523204:1d8uw6x4fg/$default/GET/contact ==>
-  // arn:aws:execute-api:me-south-1:262280523204:1d8uw6x4fg/$default/*/contact
+  // arn:aws:execute-api:me-south-1:62280523204:1d8uw6x4fg/$default/GET/contact ==>
+  // arn:aws:execute-api:me-south-1:62280523204:1d8uw6x4fg/$default/*/contact
   const parsedMethodArn = parse(methodArn)
   parsedMethodArn.resource = parsedMethodArn.resource.replace(/GET|POST|DELETE|OPTION|PUT|HEAD/g, '*')
   const methodArnUpdated = build(parsedMethodArn)
