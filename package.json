@@ -1,0 +1,47 @@
+{
+  "name": "sst-auth",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --config=jest.config.test.js",
+    "integ-test": "jest --config=jest.config.integ.test.js",
+    "start": "sst deploy && sst start",
+    "build": "sst build",
+    "deploy": "sst deploy",
+    "remove": "sst remove"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "1.114.0",
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-typescript": "^7.15.0",
+    "@nuxtjs/eslint-config-typescript": "^6.0.1",
+    "@types/aws-lambda": "^8.10.83",
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.7.10",
+    "eslint": "^7.32.0",
+    "jest": "^27.1.0",
+    "jest-runner-tsc": "^1.6.0",
+    "ts-jest": "^27.0.5"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-s3-deployment": "1.114.0",
+    "@aws-cdk/core": "1.114.0",
+    "@aws-sdk/client-dynamodb": "^3.27.0",
+    "@aws-sdk/client-s3": "^3.27.0",
+    "@aws-sdk/lib-dynamodb": "^3.27.0",
+    "@aws-sdk/util-arn-parser": "^3.29.0",
+    "@aws-sdk/util-dynamodb": "^3.27.0",
+    "@serverless-stack/cli": "0.40.2",
+    "@serverless-stack/resources": "0.40.2",
+    "@types/jsonwebtoken": "^8.5.5",
+    "@types/mocha": "^9.0.0",
+    "@types/uuid": "^8.3.1",
+    "axios": "^0.21.1",
+    "jsonwebtoken": "^8.5.1",
+    "ksuid": "^2.0.0",
+    "uuid": "^8.3.2",
+    "zod": "^3.8.1"
+  }
+}

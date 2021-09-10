@@ -1,0 +1,32 @@
+{
+  "validation": {
+    "form": {
+      "required": "Field is required",
+      "min": "Minimum length error",
+      "max": "Max length  error",
+      "email": "Please provide valid email"
+    }
+  },
+  "fields": {
+    "name": "Name",
+    "email": "Email",
+    "details": "Details",
+    "password": "Password",
+    "firstName": "First Name",
+    "lastName": "Last Name"
+  },
+  "contact-form": {
+    "success": "Thank you, I will contact you soon.",
+    "error": "Sorry, something went wrong, please try later.",
+    "name": "Name",
+    "email": "Email",
+    "details": "Details",
+    "contact-me": "Contact me"
+  },
+  "api": {
+    "general-error": "Unknown error. Please contact administrator.",
+    "error-msg-title": "Unknown error",
+    "update-status-msg-title": "Update status",
+    "error-msg-content": "Unknown error. Please contact administrator."
+  }
+}
